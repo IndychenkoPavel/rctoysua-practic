@@ -1,0 +1,37 @@
+.modal-car {
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(0, 0, 0, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.5s all;
+}
+.modal-close {
+    width: 3rem;
+    height: 3rem;
+    background-color: red;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    cursor: pointer;
+}
+
+.modal-car.active {
+    opacity: 1;
+    pointer-events: all;
+}
+
+.modal-content {
+    width: 20rem;
+    height: 20rem;
+    background-color: #fff;
+    position: relative;
+    color: #000;
+    background-color: rgb(216, 216, 216);
+}

@@ -1,25 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+// import Nav from './components/Nav';
+import Contact from './components/Contact';
+import Delivery from './components/Delivery';
+import About from './components/About';
+import Sale from './components/Sale';
+import Home from './components/Home';
+import MonsterTruck from './components/MonsterTruck';
+import Cars from './components/Cars';
+import Layout from './components/Layout';
+import { Routes, Route } from 'react-router-dom';
 
 function App() {
   return (
+    
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route path="contact" element={<Contact />} />
+          <Route path="/" element={<Home />} />
+          <Route path="delivery" element={<Delivery />} />
+          <Route path="about" element={<About />} />
+          <Route path="sale" element={<Sale />} />
+          <Route path=":id" element={<MonsterTruck />} />
+          <Route path="/ShortCourse" element={<Cars />} />
+        </Route>
+      </Routes>
     </div>
   );
 }
-
 export default App;
