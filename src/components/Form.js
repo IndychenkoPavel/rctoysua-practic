@@ -1,7 +1,7 @@
 import React from 'react';
 import { useState } from 'react';
 import './css/form.css';
-// import InputMask from 'react-input-mask';
+import InputMask from "react-input-mask";
 
 const Form = () => {
 
@@ -29,7 +29,7 @@ const Form = () => {
             </div>
             <div className="form-item">
                 <label className="form-label">Ваш телефон
-                <input value={tel} onChange={(e) => setTel(e.target.value)} className="form-input _req _tel" name="phone" type="tel" maxLength={20}
+                <InputMask value={tel} className="form-input _req _tel" mask="+38(999)-999-99-99" onChange={(e) => setTel(e.target.value)} name="phone" type="tel"
                 required={true} placeholder="+38(___)___-__-__" />
                 </label>
                 <span className="span-error" style={{display: "none"}}>Заповніть поле</span>

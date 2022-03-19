@@ -4,7 +4,7 @@ import { useState } from 'react';
 import InputMask from "react-input-mask";
 
 
-const FormAll = ({active, setActive, text, product}) => {
+const FormAll = ({active, setActive, text, product, texteria}) => {
     const [ name, setName ] = useState('');
     const [ tel, setTel ] = useState('');
     const [ mass, setMass ] = useState('');
@@ -41,7 +41,7 @@ const FormAll = ({active, setActive, text, product}) => {
             </div>
             <div className="form-item">
                 <label className="form-label">Додаткова інформація
-                <textarea value={mass} onChange={(e) => setMass(e.target.value)} className="form-input" name="message"></textarea>
+                <textarea placeholder={texteria} value={mass} onChange={(e) => setMass(e.target.value)} className="form-input" name="message"></textarea>
                 </label>
             </div>
             <input type="submit" className="form-button" value="відправити" />

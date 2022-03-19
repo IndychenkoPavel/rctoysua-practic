@@ -19,11 +19,7 @@ const CarsClass = () => {
   // const massClass = cars.filter((e) => e.class === id);
   console.log(id);
   let massCar = [];
-  if(id === 'Remo Hobby') {
-    massCar = cars.filter((e) => e.brend === id);
-  } else if (id === 'ZD Racing') {
-    massCar = cars.filter((e) => e.brend === id);
-  } else if (id === 'WPL') {
+  if(id === 'Remo Hobby' || id === 'ZD Racing' || id === 'WPL') {
     massCar = cars.filter((e) => e.brend === id);
   } else {
     massCar = cars.filter((e) => e.class === id);

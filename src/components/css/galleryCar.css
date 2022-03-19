@@ -1,0 +1,45 @@
+
+.title-gallery-cars {
+    text-align: center;
+    margin: 1rem 0;
+  }
+  .gallery-car-block {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 2rem;
+  }
+  .gallery-car-box {
+    display: block;
+    text-decoration: none;
+    width: 31%;
+    height: 15rem;
+    box-shadow: 1px 1px 10px 3px rgba(189, 189, 189, 0.603);
+    border-radius: 1rem;
+    margin-bottom: 2.5rem;
+    overflow: hidden;
+    transition: all 0.3s linear;
+    cursor: pointer;
+    transform:scale(1);
+  }
+  .gallery-car-box:hover {
+    box-shadow: 1px 1px 10px 3px rgb(161, 161, 161);
+    /* width: 32%; */
+    transform:scale(1.05);
+  }
+  .gallery-car-title {
+    text-align: center;
+    background-color: rgba(5,0,49,0.87);
+    color: rgb(218, 218, 218);
+    height: 3rem;
+    line-height: 3rem;
+    font-size: 2rem;
+  }
+  .gallery-car-img {
+    width: 100%;
+  }
+  .gallery-car-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }

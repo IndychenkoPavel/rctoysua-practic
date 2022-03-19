@@ -1,0 +1,158 @@
+
+.repair-title {
+    text-align: center;
+    font-style: italic;
+    margin-top: 2rem;
+}
+.repair-title span {
+    border-bottom: 2px solid black;
+}
+.service-block {
+    position: relative;
+    font-size: 1.4rem;
+    margin-left: 8rem;
+}
+.service-block::after {
+    content: "";
+    width: 100px;
+    height: 100px;
+    top: 50%;
+    left: -150px;
+    position: absolute;
+    margin-top: -50px;
+    display: block;
+    background-image: url(../../../public/img/repair/repair1.png);
+    background-size: 100%;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+.service-box {
+    list-style: disc;
+    margin-top: 20px;
+}
+.service-list {
+    margin: 10px 0;
+    position: relative;
+    list-style: none;
+}
+.service-list::after {
+    content: "";
+    width: 20px;
+    height: 20px;
+    top: 50%;
+    left: -30px;
+    position: absolute;
+    margin-top: -10px;
+    display: block;
+    background-image: url(../../../public/img/repair/settings.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.service-youtube {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    border-radius: 0.5rem;
+    padding: 0 0.5rem;
+    transition: all 0.2s linear;
+}
+.service-youtube:hover {
+    background-color: rgb(12, 12, 12);
+    color: #fff;
+}
+
+
+
+@media screen and (max-width: 1110px) {
+    .pay__block::after, .delivery__block::after {
+        width: 70px;
+        height: 70px;
+        top: 50%;
+        left: -110px;
+        margin-top: -35px;
+    }
+    .main__delivery .container{
+        padding: 0 20px;
+    }
+    .tittle__delivery {
+        font-size: 55px; 
+    } 
+    .delivery__top {
+        margin: 30px 0 20px 0;
+    } 
+    .delivery__top p {
+        font-size: 25px;
+    } 
+    .delivery__block, .pay__block {
+        font-size: 18px;
+        margin-left: 100px;
+    }
+    .pay__block {
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 910px) {
+    .pay__block::after, .delivery__block::after {
+        width: 50px;
+        height: 50px;
+        top: 50%;
+        left: -90px;
+        margin-top: -25px;
+    }
+
+    .tittle__delivery {
+        font-size: 45px; 
+    } 
+    .delivery__top {
+        margin: 20px 0 10px 0;
+    } 
+    .delivery__top p {
+        font-size: 20px;
+    } 
+    .delivery__block, .pay__block {
+        font-size: 15px;
+        margin-left: 80px;
+    }
+    .pay__block {
+        margin-top: 10px;
+    }
+    .delivery__list, .pay__list {
+        margin: 5px 0;
+    }
+}
+
+@media screen and (max-width: 710px) {
+    .pay__block::after, .delivery__block::after {
+        display: none;
+    }
+    .tittle__delivery {
+        font-size: 35px; 
+    }
+    .delivery__top {
+        margin: 10px 0 10px 0;
+    } 
+    .delivery__top p {
+        font-size: 17px;
+    } 
+    .delivery__block, .pay__block {
+        font-size: 14px;
+        margin-left: 10px;
+    }
+    .pay__block {
+        margin-top: 10px;
+    }
+    .delivery__list, .pay__list {
+        margin: 5px 0;
+    }
+    .tittle__pay, .tittle__deliv {
+        font-size: 15px;
+    }
+    .delivery__box, .pay__box {
+        margin-top: 10px;
+    }
+    .main__delivery .container{
+        margin-bottom: -20px;
+    }
+}
+

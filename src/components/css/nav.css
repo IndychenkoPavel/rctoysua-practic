@@ -1,0 +1,108 @@
+
+.nav {
+    background-color: rgba(5,0,49,0.87);
+  }
+  .block-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 6rem;
+  }
+  .nav-left {
+    color: #fff;
+    font-size: 3rem;
+    display: block;
+    text-decoration: none;
+    padding: 0;
+    transition: all 0.3s linear;
+    -webkit-text-stroke: 2px transparent;
+    text-shadow: 3px 2px 0 transparent;
+  }
+  .nav-left:hover {
+    text-shadow: 3px 2px 0 #e9e9e9b2;
+    -webkit-text-stroke: 2px rgba(92, 92, 92, 0.911);
+  }
+  .nav-center-ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+  }
+  .nav-center-link {
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    margin: 0 0.5rem;
+    position: relative;
+  }
+  .nav-center-link:after {
+    content: "";
+    width: 0;
+    height: 1.5px;
+    background-color: #fff;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    z-index: 1;
+    transition: width .3s linear;
+  }
+  .nav-center-link:hover:after{
+    width: 100%;
+  } 
+  .nav-right-ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+  }
+  .nav-right-link {
+    display: block;
+    width: 3rem;
+    height: 3rem;
+    text-decoration: none;
+    margin: 0 0.3rem;
+    border-radius: 100%;
+  }
+  .tiktok-white {
+    background-color: #fff;
+  }
+  .nav-right-link:hover {
+    box-shadow: 1px 1px 10px 5px rgba(189, 189, 189, 0.603);
+  }
+  .nav-right-link img {
+    width: 100%;
+    height: 100%;
+  }
+  
+  /* nav bottom */
+  
+  .nav-bottom {
+    background-color: rgba(161, 161, 161, 0.87);
+    height: 3rem;
+  }
+  .nav-bottom .container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .nav-bottom-link {
+    display: flex;
+    text-decoration: none;
+    color: #000;
+    font-size: 1.5rem;
+    border-radius: 0.5rem;
+    padding: 0.2rem 1rem;
+    transition: all 0.4s linear;
+  }
+  .nav-bottom-link:hover {
+    background-color: rgba(46, 43, 75, 0.87);;
+    color: #fff;
+  }
+  .nav-bottom-img {
+    display: flex;
+    align-items: center;
+    width: 2rem;
+    margin-right: 0.5rem;
+  }
+  .nav-bottom-img img {
+    width: 100%;
+  }
