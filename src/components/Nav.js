@@ -1,8 +1,12 @@
 import React from 'react';
+import BurgerMenu from './BurgerMenu';
 import { Link } from 'react-router-dom';
 import './css/nav.css';
+import { useState } from 'react';
 
 const Nav = () => {
+    const [modalActive, setModalActive] = useState(false);
+
   return (
     <nav className='nav'>
         <div className="container">
@@ -44,6 +48,11 @@ const Nav = () => {
                         </li>
                     </ul>
                 </div>
+                <div className="burger-btn" onClick={() => setModalActive(true)}>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
             </div>
         </div>
         <div className="nav-bottom">
@@ -59,6 +68,7 @@ const Nav = () => {
                 </div>
             </div>
         </div>
+        <BurgerMenu active={modalActive} setActive={setModalActive}/>
     </nav>
   )
 }

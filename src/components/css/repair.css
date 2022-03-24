@@ -3,6 +3,7 @@
     text-align: center;
     font-style: italic;
     margin-top: 2rem;
+    font-size: 1.4rem;
 }
 .repair-title span {
     border-bottom: 2px solid black;
@@ -11,6 +12,7 @@
     position: relative;
     font-size: 1.4rem;
     margin-left: 8rem;
+    margin-bottom: 4rem;
 }
 .service-block::after {
     content: "";
@@ -28,7 +30,7 @@
 }
 .service-box {
     list-style: disc;
-    margin-top: 20px;
+    margin-top: 1.2rem;
 }
 .service-list {
     margin: 10px 0;
@@ -55,104 +57,34 @@
     border-radius: 0.5rem;
     padding: 0 0.5rem;
     transition: all 0.2s linear;
+    border: 1px solid;
 }
 .service-youtube:hover {
     background-color: rgb(12, 12, 12);
     color: #fff;
 }
 
-
-
-@media screen and (max-width: 1110px) {
-    .pay__block::after, .delivery__block::after {
-        width: 70px;
-        height: 70px;
-        top: 50%;
-        left: -110px;
-        margin-top: -35px;
+@media screen and (max-width: 950px) {
+    .repair-title {
+        margin-top: 0;
+        font-size: 1.4rem;
     }
-    .main__delivery .container{
-        padding: 0 20px;
+    .service-block {
+        margin-left: 0;
+        margin-bottom: 2rem;
     }
-    .tittle__delivery {
-        font-size: 55px; 
-    } 
-    .delivery__top {
-        margin: 30px 0 20px 0;
-    } 
-    .delivery__top p {
-        font-size: 25px;
-    } 
-    .delivery__block, .pay__block {
-        font-size: 18px;
-        margin-left: 100px;
-    }
-    .pay__block {
-        margin-top: 20px;
-    }
-}
-
-@media screen and (max-width: 910px) {
-    .pay__block::after, .delivery__block::after {
-        width: 50px;
-        height: 50px;
-        top: 50%;
-        left: -90px;
-        margin-top: -25px;
-    }
-
-    .tittle__delivery {
-        font-size: 45px; 
-    } 
-    .delivery__top {
-        margin: 20px 0 10px 0;
-    } 
-    .delivery__top p {
-        font-size: 20px;
-    } 
-    .delivery__block, .pay__block {
-        font-size: 15px;
-        margin-left: 80px;
-    }
-    .pay__block {
-        margin-top: 10px;
-    }
-    .delivery__list, .pay__list {
-        margin: 5px 0;
-    }
-}
-
-@media screen and (max-width: 710px) {
-    .pay__block::after, .delivery__block::after {
+    .service-block::after {
         display: none;
     }
-    .tittle__delivery {
-        font-size: 35px; 
-    }
-    .delivery__top {
-        margin: 10px 0 10px 0;
-    } 
-    .delivery__top p {
-        font-size: 17px;
-    } 
-    .delivery__block, .pay__block {
-        font-size: 14px;
-        margin-left: 10px;
-    }
-    .pay__block {
-        margin-top: 10px;
-    }
-    .delivery__list, .pay__list {
-        margin: 5px 0;
-    }
-    .tittle__pay, .tittle__deliv {
-        font-size: 15px;
-    }
-    .delivery__box, .pay__box {
-        margin-top: 10px;
-    }
-    .main__delivery .container{
-        margin-bottom: -20px;
+    .service-list {
+        margin: 0.7rem 3rem 0;
     }
 }
-
+@media screen and (max-width: 600px) {
+    .service-block {
+        font-size: 1.2rem;
+    }
+    .service-list {
+        margin: 0.7rem 2rem 0;
+    }
+  }

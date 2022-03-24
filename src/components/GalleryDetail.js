@@ -51,7 +51,7 @@ const GalleryDetail = () => {
           <h3 className="detail-title"><span>Деталі та комплектуючі для радіокерованих моделей</span> </h3>
           <div className="gallery-detail-block">
           {detail.map((item) => 
-          <div className="block" key={item.id}>
+          <div className="detail-block" key={item.id} onClick={()=> openForm(item.title)}>
             <Tilt style={{ height: '15rem' }} className="gallery-detail-box" options={{ max: 20,
               speed: 500,
               easing:"cubic-bezier(.03,.98,.52,.99)",
@@ -62,7 +62,7 @@ const GalleryDetail = () => {
               </div>
              
             </Tilt>
-            <button onClick={()=> openForm(item.title)} className='btn-detail'>замовити</button>
+            {/* <button onClick={()=> openForm(item.title)} className='btn-detail'>замовити</button> */}
           </div>
             
           )}

@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'; 
 import './css/repair.css';
 
 const Repair = () => {
@@ -11,7 +11,7 @@ const Repair = () => {
                     <li className="service-list">Послуги з ремонту та обслуговування радіокерованих машинок.</li>
                     <li className="service-list">Допоможемо вам підібрати необхідну запчастину для ремонту та тюнінгу моделі.</li>                           
                     <li className="service-list">Безкоштовні консультації з ремонту, обслуговування та тюнінгу.</li>
-                    <li className="service-list">На каналi <a className="service-youtube" href="https://www.youtube.com/channel/UCczUOgbKIesFxaRMVRpQrNg/videos" target="_blank" rel="noreferrer">RcToysUa</a>  багато відеороликів з ремонту, обслуговування моделей.</li>
+                    <li className="service-list">На You Tube каналi <a className="service-youtube" href="https://www.youtube.com/channel/UCczUOgbKIesFxaRMVRpQrNg/videos" target="_blank" rel="noreferrer">RcToysUa</a> багато відеороликів з ремонту, обслуговування моделей.</li>
                     <li className="service-list">Підбір коліс, шин та дисків за потрібними розмірами та протектором.</li>
                     <li className="service-list">Великий вибір олії для амортизаторів та диференціалів.</li>
                     <li className="service-list">Акумулятори для радіокерованих моделей в наявності та на замовлення.</li>                      

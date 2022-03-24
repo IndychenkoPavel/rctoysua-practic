@@ -1,0 +1,100 @@
+
+.burger-menu {
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+    height: 100vh;
+    left: 0;
+    top: 0;
+    background-color: rgba(165, 165, 165, 0.685);
+    backdrop-filter: blur(4px);
+    display: none;
+}
+.burger-menu.active {
+    display: block;
+}
+.burger-top {
+    display: flex;
+    justify-content: space-between;
+}
+.burger-content {
+    width: 20rem;
+    height: 100%;
+    background-color: rgb(47, 47, 51);
+    color: #fff;
+    padding: 1rem;
+    position: relative;
+}
+.burger-title {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.burger-link-li {
+    list-style: none;
+    margin-top: 1rem;
+    cursor: pointer;
+    border-bottom: 2px solid rgb(255, 255, 255);
+    transition: all 0.4s linear;
+}
+.burger-link-str {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.4rem;
+}
+.burger-contact-link {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.4rem;
+    display: flex;
+    margin-top: 1rem;  
+    transition: all 0.4s linear;
+}
+.burger-link-li:hover {
+    padding-left: 1rem;
+}
+.burger-contact-img {
+    width: 2rem;
+    height: 2rem;
+    display: block;
+    margin-right: 0.5rem;
+}
+.burger-contact-img img {
+    width: 100%;
+    height: 100%;
+}
+.burger-social {
+    position: absolute;
+    bottom: 3rem;
+    left: 3.5rem;
+}
+.burger-close {
+    position: relative;
+    width: 2rem;
+    height: 2rem;
+    margin-right: 1rem;
+    cursor: pointer;
+    position: absolute;
+    top: 1rem;
+    right: 0;
+    transition: all 0.4s linear;
+    border-radius: 100%;
+}
+.burger-close:hover {
+    transform: rotate(90deg);
+}
+.burger-close-one, .burger-close-two {
+    background-color: rgb(223, 223, 223);
+    height: 2px;
+    width: 100%;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 50%;
+}
+.burger-close-one {
+    transform: rotate(45deg);
+}
+.burger-close-two {
+    transform: rotate(-45deg);
+}
