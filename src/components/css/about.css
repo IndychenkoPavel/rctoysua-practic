@@ -1,13 +1,13 @@
 
+.about {
+    padding-bottom: 1rem;
+}
 .title-about {
     text-align: center;
     font-size: 3rem;
     color: #0a0274;
     text-shadow: 4px 3px 1px #5b567791;   
 }
-/* .about-top  {
-    margin: 20px 0 30px 0;
-} */
 .about-top p {
     text-align: center;
     font-size: 2rem;
@@ -18,12 +18,13 @@
 }
 .about-box-left {
     width: 30%;
-    margin-right: 70px;
+    margin-right: 4.3rem;
+    padding-top: 2rem;
 }
 .about-info-box {
     width: 100%;
-    margin-bottom: 25px;
-    height: 150px;
+    margin-bottom: 2rem;
+    height: 10rem;
     color: #fff;
     position: relative;
     perspective: 1000px;
@@ -72,9 +73,10 @@
     width: 65%;
 }
 .about-list {
-    margin-bottom: 10px;
-    font-size: 18px;
+    margin-bottom: 0.5rem;
+    font-size: 1.4rem;
     position: relative;
+    line-height: 1.2;
 }
 .about-list::after {
     content: "";
@@ -96,14 +98,10 @@
     margin-bottom: 20px;
     margin-left: -20px;
 }
-/* .about-list {
-    display: flex;
-    align-items: center;
-} */
 .about-link {
     margin: 0 0.5rem;
-    padding: 0 1rem;
-    border-radius: 100%;
+    padding: 0 0.5rem;
+    border-radius: 0.5rem;
     text-decoration: none;
     color: #000;
     font-weight: bold;
@@ -117,124 +115,50 @@
 
 
 
-@media screen and (max-width: 1110px) {
-    .about__welcome-text {
-        font-size: 18px;    
-    }
-    .about__list {
-        font-size: 15px;
-    }
-
-    .tittle__about {
-        font-size: 55px;
-    }
-    
-    .about__top {
-        margin: 20px 0 30px 0;
-    }
-    
-    .about__top p {
-        font-size: 25px;
-    }
-    .about__info-box {
-        margin-bottom: 20px;
-        height: 130px
-    }
-    .about__box-left {
-        width: 250px;
-        margin-right: 40px;
-    }
-    .about__list::after {
-        width: 10px;
-        height: 10px;   
-        left: -20px;
-        margin-top: -5px;      
-    } 
-}
-
-@media screen and (max-width: 910px) {
-    .about__box-left {
+@media screen and (max-width: 1250px) {
+    .about-box-left {
         display: none;
     }
-    .about__box-right {
+    .contact-box {
+        justify-content: center;
+    }
+    .about-box-right {
         width: 100%;
+        margin-left: 8rem;
     }
-    .tittle__about {
-        font-size: 45px;
+ }
+
+ @media screen and (max-width: 950px) {
+    .about-top p {
+        font-size: 1.7rem;
+        display: none;
     }
-    .about__welcome-text {
-        text-align: center;  
-        font-size: 17px;
+    .about-box-right  {
+        margin-left: 2rem;
     }
-    
-    .about__top {
-        margin: 10px 0 20px 0;
+    .about-welcome-text  {
+        font-size: 1.3rem;
+        text-align: center;
     }
-    
-    .about__top p {
-        font-size: 20px;
+    .about-list {
+        font-size: 1.2rem;
     }
 }
 
-@media screen and (max-width: 710px) {
-    .tittle__about {
-        font-size: 40px;
+@media screen and (max-width: 600px) {
+    .title-about {
+    font-size: 2.5rem;
     }
-    .about__welcome-text {
-        text-align: center;  
-        font-size: 15px;
+    .about-top p {
+        font-size: 1.4rem;
     }
-    
-    .about__top {
-        margin: 10px 0;
+    .contact-box-ul, .contact-social-list {
+        font-size: 1rem;
     }
-    
-    .about__top p {
-        font-size: 17px;
+    .contact-list {
+        margin: 0.3rem 0;
     }
-    .about__list {
-        font-size: 12px;
+    .about-welcome-text  {
+        font-size: 1.2rem;
     }
-    .about__list::after {
-        width: 8px;
-        height: 8px;   
-        left: -15px;
-        margin-top: -4px;      
-    } 
-    .main__about .container{
-        padding: 0 30px;
-    }
-}
-@media screen and (max-width: 510px) {
-    .tittle__about {
-        font-size: 35px;
-    }
-    .about__welcome-text { 
-        font-size: 14px;
-    }
-    .about__top {
-        margin: 5px 0;
-    }
-    
-    .about__top p {
-        font-size: 14px;
-    }
-    .about__list {
-        font-size: 12px;
-    }
-}
-
-
-/* // .a1 {
-//     font-family: 'Grechen Fuemen', cursive;
-// }
-// .a2 {
-//     font-family: 'Kaushan Script', cursive;
-// }
-// .a3 {
-//     font-family: 'Indie Flower', cursive;
-    
-// }
-// .a4 {
-//     font-family: 'Kalam', cursive;
-// } */
+  }

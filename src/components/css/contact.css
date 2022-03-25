@@ -103,75 +103,49 @@
 
  /* media */
 
-@media screen and (max-width: 1110px) {
-    .main__contact .container{
-        padding: 0 20px 0 50px;
-    }
-    .contact-title {
-        font-size: 55px; 
-    } 
-    .contact-top p {
-        font-size: 25px;
-    } 
-    .contact__box__ul, .contact__social-list, .contact__box__ul a {
-        font-size: 18px;
-    }
-    .contact__box__info {
-    margin-left: 0;
-    }
-    .contact__social-list a{
-        text-decoration: none;
-        display: block;
-        width: 30px;
-        height: 30px;
-        border-radius: 100%;
-        margin: 5px 10px 5px 0;
-    }
-    .contact__social-list a:hover {
-            box-shadow: 0px 0px 3px 2px rgba(18,21,134,0.75);
-    }
-}
-
-@media screen and (max-width: 910px) {
-
-    .main__contact .container{
-        padding: 0 10px 0 50px;
-    }
-    .tittle__contact {
-        font-size: 45px; 
-    } 
-    .contact__top p {
-        font-size: 20px;
-    } 
-}
-
-@media screen and (max-width: 770px) {
-    .tittle__contact{
-        font-size: 35px; 
-    }
-    .contact__top p, .form__title, .contact__box__social p {
-        font-size: 17px;
-    } 
-    .contact__box__ul, .contact__social-list, .contact__box__ul a {
-        font-size: 14px;
-    }
-
-    .contact__social-list a{
-        width: 30px;
-        height: 30px;
-        margin: 5px 10px 5px 0;   
-    }
-    .form__label {
-        font-size: 14px;
-    }
-}
-
-@media screen and (max-width: 630px) {
-    .contact__box__form {
+ @media screen and (max-width: 1250px) {
+    .contact-box-form {
         display: none;
     }
-    .contact__box__info {
+    .contact-box {
+        justify-content: center;
+    }
+    .contact-box-info {
         width: 100%;
+        margin-left: 8rem;
+    }
+ }
+
+ @media screen and (max-width: 950px) {
+    .contact-top {
+    font-size: 1.7rem;
+    }
+    .contact-box-info {
+    font-size: 1.2rem;
+    margin-left: 2rem;
+    }
+    .contact-box-text p,.contact-box-social p {
+    font-size: 1.3rem;
+    }
+    .contact-box-ul, .contact-social-list {
+        font-size: 1.2rem;
     }
 }
 
+@media screen and (max-width: 600px) {
+    .contact-title {
+    font-size: 2.5rem;
+    }
+    .contact-top {
+        font-size: 1.4rem;
+    }
+    .contact-box-ul, .contact-social-list {
+        font-size: 1rem;
+    }
+    .contact-list {
+        margin: 0.3rem 0;
+    }
+    .contact-box-text p, .contact-box-social p {
+        font-size: 1.2rem;
+    }
+  }

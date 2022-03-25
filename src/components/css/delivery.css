@@ -32,6 +32,7 @@
 }
 .pay-block {
     margin-top: 2rem;
+    padding-bottom: 2rem;
 }
 .delivery-list::after, .pay-list::after {
     content: "";
@@ -75,96 +76,43 @@
     background-repeat: no-repeat;
 }
 
-@media screen and (max-width: 1110px) {
-    .pay__block::after, .delivery__block::after {
-        width: 70px;
-        height: 70px;
-        top: 50%;
-        left: -110px;
-        margin-top: -35px;
+@media screen and (max-width: 950px) {
+    .delivery-top {
+    font-size: 1.7rem;
     }
-    .main__delivery .container{
-        padding: 0 20px;
+    .delivery-block::after {
+    display: none;
     }
-    .tittle__delivery {
-        font-size: 55px; 
-    } 
-    .delivery__top {
-        margin: 30px 0 20px 0;
-    } 
-    .delivery__top p {
-        font-size: 25px;
-    } 
-    .delivery__block, .pay__block {
-        font-size: 18px;
-        margin-left: 100px;
+    .pay-block::after {
+    display: none;
     }
-    .pay__block {
-        margin-top: 20px;
+    .delivery-block, .pay-block {
+    font-size: 1.2rem;
+    margin-left: 2rem;
+    }
+    .delivery-block p, .pay-block p {
+    font-size: 1.3rem;
     }
 }
 
-@media screen and (max-width: 910px) {
-    .pay__block::after, .delivery__block::after {
-        width: 50px;
-        height: 50px;
-        top: 50%;
-        left: -90px;
-        margin-top: -25px;
+@media screen and (max-width: 600px) {
+    .delivery-title {
+    font-size: 2.5rem;
     }
-
-    .tittle__delivery {
-        font-size: 45px; 
-    } 
-    .delivery__top {
-        margin: 20px 0 10px 0;
-    } 
-    .delivery__top p {
-        font-size: 20px;
-    } 
-    .delivery__block, .pay__block {
-        font-size: 15px;
-        margin-left: 80px;
+    .delivery-top {
+        font-size: 1.4rem;
     }
-    .pay__block {
-        margin-top: 10px;
+    .delivery-block, .pay-block {
+        font-size: 1rem;
+        }
+    .delivery-box, .pay-box {
+        margin-top: 0.5rem;
     }
-    .delivery__list, .pay__list {
-        margin: 5px 0;
+    .delivery-list, .pay-list {
+        margin: 0.3rem 0;
     }
-}
-
-@media screen and (max-width: 710px) {
-    .pay__block::after, .delivery__block::after {
-        display: none;
-    }
-    .tittle__delivery {
-        font-size: 35px; 
-    }
-    .delivery__top {
-        margin: 10px 0 10px 0;
-    } 
-    .delivery__top p {
-        font-size: 17px;
-    } 
-    .delivery__block, .pay__block {
-        font-size: 14px;
-        margin-left: 10px;
-    }
-    .pay__block {
-        margin-top: 10px;
-    }
-    .delivery__list, .pay__list {
-        margin: 5px 0;
-    }
-    .tittle__pay, .tittle__deliv {
-        font-size: 15px;
-    }
-    .delivery__box, .pay__box {
-        margin-top: 10px;
-    }
-    .main__delivery .container{
-        margin-bottom: -20px;
-    }
-}
+    .delivery-block p, .pay-block p {
+        font-size: 1.2rem;
+        }
+  }
 

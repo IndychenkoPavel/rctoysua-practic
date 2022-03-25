@@ -3,7 +3,7 @@ import { useState } from 'react';
 import ModalCar from './ModalCar';
 import FormAll from './FormAll';
 import { useParams } from 'react-router-dom';
-import './css/cars.css';
+import './css/carsClass.css';
 import { cars } from './Cars';
 
 const equipments = ['модель в зборі', 'пульт радіокерування', 'аккумулятор', 'зарядний пристрій', 'інструкція', 'набір інструментів'];
@@ -29,11 +29,11 @@ const CarsClass = () => {
     setModalActive(true);
     setContent(item);
   }
-  const InfoConsult = (product, text) => {
-    setModalForm(true);
-    setText(text);
-    setProduct(product);
-  }
+  // const InfoConsult = (product, text) => {
+  //   setModalForm(true);
+  //   setText(text);
+  //   setProduct(product);
+  // }
   const BuyerCar = (product, text) => {
     setModalForm(true);
     setText(text);
@@ -66,9 +66,12 @@ const CarsClass = () => {
                   )}
                 </ul>
                 <div className="monster-trucks-btn">
+                  {/* <button onClick={() => InfoConsult(item.title, 'Отримати консультацію')} className="monster-trucks-btn-two">{item.price}</button>  */}
+                  <div className="monster-truck-price">
+                    Ціна: {item.price}
+                  </div>
                   <button onClick={() => InfoCar(item)} className="monster-trucks-btn-three">Більше інформації</button>
                   <button onClick={() => BuyerCar(item.title, 'Замовити')} className="monster-trucks-btn-one">Замовити модель</button>
-                  <button onClick={() => InfoConsult(item.title, 'Отримати консультацію')} className="monster-trucks-btn-two">Отримати консультацію</button> 
                 </div> 
               </div>
 

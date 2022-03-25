@@ -43,7 +43,7 @@
     text-shadow: 3px 2px 0 transparent;
   }
   .nav-left:hover {
-    text-shadow: 3px 2px 0 #e9e9e9b2;
+    text-shadow: 2px 1px 0 #e9e9e9b2;
     -webkit-text-stroke: 2px rgba(92, 92, 92, 0.911);
   }
   .nav-center-ul {
@@ -119,7 +119,7 @@
     transition: all 0.4s linear;
   }
   .nav-bottom-link:hover {
-    background-color: rgba(46, 43, 75, 0.87);;
+    background-color: rgba(46, 43, 75, 0.685);
     color: #fff;
   }
   .nav-bottom-img {

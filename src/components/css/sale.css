@@ -75,76 +75,38 @@
 }
 
 
-
-@media screen and (max-width: 1110px) {
-    .main__sale .container{
-        padding: 0 20px 0 50px;
+@media screen and (max-width: 950px) {
+    .sale-top p {
+    font-size: 1.7rem;
     }
-    .tittle__sale {
-        font-size: 55px; 
-    } 
-    .sale__top p {
-        font-size: 25px;
-    } 
-    .sale__box__ul, .sale__social-list, .sale__box__ul a {
-        font-size: 18px;
+    .sale-box-ul, .sale-social-list {
+    margin-left: 2rem;
     }
-
-    .sale__social-list a{
-        text-decoration: none;
-        display: block;
-        width: 30px;
-        height: 30px;
-        border-radius: 100%;
-        margin: 5px 10px 5px 0;
+    .box-sale p, .sale-box-social p  {
+    font-size: 1.3rem;
     }
-    .sale__box__info {
-        margin-right: 10px;
+    .sale-box-ul, .sale-social-list a {
+        font-size: 1.2rem;
     }
 }
 
-@media screen and (max-width: 910px) {
-
-    .main__sale .container{
-        padding: 0 10px 0 50px;
+@media screen and (max-width: 600px) {
+    .title-sale {
+    font-size: 2.5rem;
     }
-    .tittle__sale {
-        font-size: 45px; 
-    } 
-    .sale__top p {
-        font-size: 20px;
-    } 
-    .form__input {
-        font-size: 14px;
+    .sale-top p {
+        font-size: 1.4rem;
     }
-    .form__label {
-        font-size: 14px;
+    .sale-social-list {
+        margin: 0;
     }
-
-}
-
-@media screen and (max-width: 770px) {
-    .tittle__sale{
-        font-size: 35px; 
+    .sale-box-ul, .sale-social-list a {
+        font-size: 1rem;
+        margin: 0.3rem 0;
     }
-    .sale__top p, .form__title, .sale__box__social p {
-        font-size: 17px;
-    } 
-    .sale__box__ul, .sale__social-list, .sale__box__ul a {
-        font-size: 14px;
+    .box-sale p, .sale-box-social p  {
+        font-size: 1.2rem;
     }
-
-    .sale__social-list a{
-        width: 30px;
-        height: 30px;
-        margin: 5px 10px 5px 0;   
-    }
-    .sale__box__form {
-        display: none;
-    }
-    .sale__box__info {
-        width: 100%;
-    }
-}
+  }
 
 

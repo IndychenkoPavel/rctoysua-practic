@@ -60,7 +60,7 @@
     display: flex;
 }
 .footer-link-ul-one {
-    margin-right: 50px;
+    margin-right: 3rem;
 }
 .footer-link-social {
     list-style: none;
@@ -98,14 +98,12 @@
     .footer-link-one {
         display: none;
     }
-
-
+    .footer-link-ul-one {
+        margin-right: 2rem;
+    }
 }
 @media screen and (max-width: 600px) {
-    .service-block {
-        font-size: 1.2rem;
-    }
-    .service-list {
-        margin: 0.7rem 2rem 0;
+    .footer-link-three {
+        display: none;
     }
   }

@@ -87,4 +87,7 @@
     .service-list {
         margin: 0.7rem 2rem 0;
     }
+    .repair-title {
+        font-size: 1.2rem;
+    }
   }

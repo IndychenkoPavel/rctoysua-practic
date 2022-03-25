@@ -57,3 +57,16 @@
 .modal-form-block > form {
     margin-top: 1rem;
 }
+
+@media screen and (max-width: 600px) {
+    .modal-form-content {
+        width: 80%;
+        height: auto;
+    }
+    textarea.form-input {
+        padding: 1rem;
+    }
+    .modal-form-content h3 {
+        margin-top: 2rem;
+    }
+  }
